@@ -1,0 +1,41 @@
+<HTML>
+
+<HEAD>
+<SCRIPT> 
+
+function validateForm() 
+{
+	var x = document.forms["nameForm"]["firstname"].value; ["lastname"].value; ["emailaddress"].value;
+	if (x == "")
+		{
+			alert("Please enter your name/email address!");
+			return false;
+		}
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+
+<h1> Customer Information </h1>
+
+<FORM 
+	name="nameForm"
+	onsubmit="return validateForm()"
+	method="post"
+>
+
+    First name:<br> 
+	<input type="text" name="firstname" value=""> <br> 
+	Last name:<br> 
+	<input type="text" name="lastname" value=""> <br>
+	Email Address:<br>
+	<input type="text" name="emailaddress" value=""> 
+	<br> <br> 
+	<input type="submit" value="Submit">
+	
+</FORM>
+
+</BODY>
+</HTML>
